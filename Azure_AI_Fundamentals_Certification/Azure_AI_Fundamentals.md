@@ -29,3 +29,20 @@ In Microsoft Azure, the Anomaly Detector service provides an application program
 - Automatically translate spoken or written phrases between languages
 - Interpret commands and determine appropriate actions
 
+### Understand conversational AI
+
+Bots can be the basis of AI solutions for:
+
+- Customer support for products or services
+- Reservation systems for restaurants, airlines, cinemas, and other appointment based businesses
+- Health care consultations and self-diagnosis
+- Home automation and personal digital assistants
+
+At Microsoft, AI software development is guided by a set of six principles, designed to ensure that AI applications provide amazing solutions to difficult problems without any unintended negative consequences:
+
+- Fairness
+- Reliability and safety
+- Privacy and security
+- Inclusiveness
+- Transparency
+- Accountability
