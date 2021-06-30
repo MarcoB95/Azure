@@ -28,3 +28,4 @@ In Microsoft Azure, the Anomaly Detector service provides an application program
 - Interpret spoken language, and synthesize speech responses
 - Automatically translate spoken or written phrases between languages
 - Interpret commands and determine appropriate actions
+
