@@ -23,3 +23,8 @@ In Microsoft Azure, the Anomaly Detector service provides an application program
 - Optical character recognition is a technique used to detect and read text in images
 
 ### Understand natural language processing
+
+- Analyze and interpret text in documents, email messages, and other sources
+- Interpret spoken language, and synthesize speech responses
+- Automatically translate spoken or written phrases between languages
+- Interpret commands and determine appropriate actions
