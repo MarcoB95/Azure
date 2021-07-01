@@ -47,7 +47,8 @@ At Microsoft, AI software development is guided by a set of six principles, desi
 - Transparency
 - Accountability
 
-## Azure Machine Learning
+## Use visual tools to create machine learning models with Azure Machine Learning
+### Azure Machine Learning
 
 Azure Machine Learning is a cloud service that you can use to train and manage machine learning models. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. Most importantly, it helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models; and it enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
 
@@ -97,3 +98,14 @@ The web service you created is hosted in an Azure Container Instance. If you don
 
 - In Azure Machine Learning studio, on the Endpoints tab, then select Delete (🗑) and confirm that you want to delete the endpoint
 - On the Compute page, on the Compute Instances tab, select your compute instance and then select Stop
+
+## Create a Regression Model with Azure Machine Learning designer
+
+You can use Microsoft Azure Machine Learning designer to create regression models by using a drag and drop visual interface, without needing to write any code. To use the Azure Machine Learning designer, you create a pipeline that you will use to train a machine learning model. This pipeline starts with the dataset from which you want to train the model.
+
+> Data Transformation section contains a wide range of modules you can use to transform data before model training
+>
+> - Select Submit, and run the pipeline
+> - The dataset is now prepared for model training
+> - Select the completed Normalize Data module, and in its Settings pane on the right, on the Outputs + logs tab
+> - Select the Visualize icon for the Transformed dataset
