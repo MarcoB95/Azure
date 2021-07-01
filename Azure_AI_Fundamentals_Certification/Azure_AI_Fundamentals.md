@@ -46,3 +46,54 @@ At Microsoft, AI software development is guided by a set of six principles, desi
 - Inclusiveness
 - Transparency
 - Accountability
+
+## Azure Machine Learning
+
+Azure Machine Learning is a cloud service that you can use to train and manage machine learning models. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. Most importantly, it helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models; and it enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
+
+> Create a workspace:
+>
+> - Sign into the Azure portal
+> - Create a resource, search for Machine Learning
+> - Subscription: Your Azure subscription
+> - Resource group: Create or select a resource group
+> - Workspace name: Enter a unique name for your workspace
+> - Region: Select the geographical region closest to you
+
+ There are four kinds of compute resource you can create (In Azure Machine Learning studio, view the Compute page -under Manage-):
+
+- **Compute Instances**: Development workstations that data scientists can use to work with data and models
+- **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code
+- **Inference Clusters**: Deployment targets for predictive services that use your trained models
+- **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
+
+> Create compute targets:
+> On the Compute Instances tab, add a new compute instance
+>
+> Create compute clusters:
+> Compute Clusters tab, add a new compute cluster
+
+### Create a dataset
+
+In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a dataset.
+
+> Datasets:
+> Create a new dataset from local files
+
+### Run an automated machine learning experiment
+
+In Azure Machine Learning, operations that you run are called experiments. Follow the steps below to run an experiment that uses automated machine learning to train a regression model.
+
+> Automated ML page:
+> Create a new Automated ML run
+
+### Deploy a model as a service
+
+After you've used automated machine learning to train some models, you can deploy the best performing model as a service for client applications to use. you can deploy a service as an Azure Container Instances (ACI) or to an Azure Kubernetes Service (AKS) cluster. For production scenarios, an AKS deployment is recommended, for which you must create an inference cluster compute target.
+
+### Clean-up
+
+The web service you created is hosted in an Azure Container Instance. If you don't intend to experiment with it further, you should delete the endpoint to avoid accruing unnecessary Azure usage. You should also stop the training cluster and compute instance resources until you need them again.
+
+- In Azure Machine Learning studio, on the Endpoints tab, then select Delete (🗑) and confirm that you want to delete the endpoint
+- On the Compute page, on the Compute Instances tab, select your compute instance and then select Stop
