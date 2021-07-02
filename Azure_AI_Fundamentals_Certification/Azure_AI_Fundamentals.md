@@ -48,6 +48,7 @@ At Microsoft, AI software development is guided by a set of six principles, desi
 - Accountability
 
 ## Use visual tools to create machine learning models with Azure Machine Learning
+
 ### Azure Machine Learning
 
 Azure Machine Learning is a cloud service that you can use to train and manage machine learning models. It includes a wide range of features and capabilities that help data scientists prepare data, train models, publish predictive services, and monitor their usage. Most importantly, it helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models; and it enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
@@ -109,3 +110,29 @@ You can use Microsoft Azure Machine Learning designer to create regression model
 > - The dataset is now prepared for model training
 > - Select the completed Normalize Data module, and in its Settings pane on the right, on the Outputs + logs tab
 > - Select the Visualize icon for the Transformed dataset
+
+### Create and run a training pipeline
+
+> - In the Data Transformations section, drag a Split Data module onto the canvas under the Normalize Data module
+> - In the Model Training section, drag a Train Model module to the canvas
+> - In the Machine Learning Algorithms section, and under Regression, drag a Linear Regression module to the canvas
+> - In  the Model Scoring & Evaluation section and drag a Score Model module to the canvas
+> - Select Submit, and run the pipeline
+
+![Fig. 1](Images/Capture.PNG)
+*Credits to Microsoft: <https://docs.microsoft.com/en-us/learn/modules/create-regression-model-azure-machine-learning-designer/evaluate-model>*
+
+### Add an Evaluate Model module
+
+In the Model Scoring & Evaluation section, drag an Evaluate Model module to the canvas, under the Score Model module, and connect the output of the Score Model module to the Scored dataset. These include the following regression performance metrics:
+
+- Mean Absolute Error (MAE): The average difference between predicted values and true values
+- Root Mean Squared Error (RMSE): The square root of the mean squared difference between predicted and true values
+- Relative Squared Error (RSE): A relative metric between 0 and 1 based on the square of the differences between predicted and true values
+- Relative Absolute Error (RAE): A relative metric between 0 and 1 based on the absolute differences between predicted and true values
+- Coefficient of Determination (R2): This metric is more commonly referred to as R-Squared, and summarizes how much of the variance between predicted and true values is explained by the model
+
+### Create and run an inference pipeline
+
+> - In Azure Machine Learning Studio, click the Designer page to view all of the pipelines you have created
+> - In the Create inference pipeline drop-down list, click Real-time inference pipeline
