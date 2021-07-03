@@ -136,3 +136,49 @@ In the Model Scoring & Evaluation section, drag an Evaluate Model module to the 
 
 > - In Azure Machine Learning Studio, click the Designer page to view all of the pipelines you have created
 > - In the Create inference pipeline drop-down list, click Real-time inference pipeline
+
+## Azure resources for Custom Vision
+
+Creating an object detection solution with Custom Vision consists of three main tasks. First you must use upload and tag images, then you can train the model, and finally you must publish the model so that client applications can use it to generate predictions.
+
+For each of these tasks, you need a resource in your Azure subscription. You can use the following types of resource:
+
+Custom Vision: A dedicated resource for the custom vision service, which can be either a training, a prediction or a both resource.
+Cognitive Services: A general cognitive services resource that includes Custom Vision along with many other cognitive services. You can use this type of resource for training, prediction, or both.
+
+## Analyze text with the Text Analytics service
+
+Analyzing text is a process where you evaluate different aspects of a document or phrase, in order to gain insights into the content of that text. There are some commonly used techniques that can be used to build software to analyze text, including:
+
+- Statistical analysis of terms used in the text
+- Extending frequency analysis to multi-term phrases, commonly known as N-grams
+- Applying stemming or lemmatization algorithms to normalize words before counting them
+- Applying linguistic structure rules to analyze sentences
+- Encoding words or terms as numeric features that can be used to train a machine learning model
+- Creating vectorized models that capture semantic relationships between words by assigning them to locations in n-dimensional space
+
+You can choose to provision either of the following types of resource:
+
+- A Text Analytics resource
+- A Cognitive Services resource
+
+## Speech recognition
+
+Speech recognition is concerned with taking the spoken word and converting it into data that can be processed - often by transcribing it into a text representation. The spoken words can be in the form of a recorded voice in an audio file, or live audio from a microphone. Speech patterns are analyzed in the audio to determine recognizable patterns that are mapped to words. Microsoft Azure offers both speech recognition and speech synthesis capabilities through the Speech cognitive service, which includes the following application programming interfaces (APIs):
+
+- The Speech-to-Text API
+- The Text-to-Speech API
+
+You can use the speech-to-text API to perform real-time or batch transcription of audio into a text format. The audio source for transcription can be a real-time audio stream from a microphone or an audio file. Real-time speech-to-text allows you to transcribe text in audio streams. You can use real-time transcription for presentations, demos, or any other scenario where a person is speaking.
+
+Microsoft Azure provides cognitive services that support translation. Specifically, you can use the following services:
+
+- The Translator Text service, which supports text-to-text translation
+- The Speech service, which enables speech-to-text and speech-to-speech translation
+
+## Get started with QnA Maker and Azure Bot Service
+
+You can easily create a user support bot solution on Microsoft Azure using a combination of two core technologies:
+
+- QnA Maker. This cognitive service enables you to create and publish a knowledge base with built-in natural language processing capabilities
+- Azure Bot Service. This service provides a framework for developing, publishing, and managing bots on Azure
